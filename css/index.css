@@ -38,6 +38,10 @@ tr:hover {
   cursor: pointer;
 }
 
+td {
+  padding: 0;
+}
+
 .navbar {
   color: rgb(255, 255, 255);
   font-weight: bolder;
@@ -55,7 +59,7 @@ tr:hover {
 .main {
   color: white;
   text-align: center;
-  padding: 32px 32px 32px 24em;
+  padding: 32px 1% 32px 23%;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgb(45, 60, 52), rgb(0, 0, 0));
@@ -228,8 +232,6 @@ tr:hover {
   width: 80%;
   margin-bottom: 25px;
   border-collapse: collapse;
-  position: relative;
-  overflow: auto;
 }
 
 #table-container {
@@ -239,6 +241,14 @@ tr:hover {
   margin-bottom: 30px;
   position: relative;
   overflow: auto;
+}
+
+#favorite-table-icon {
+  margin: 0 10px 0 5px;
+}
+
+#reject-table-icon {
+  margin: 0 10px 0 5px;
 }
 
 #table-header:hover {
