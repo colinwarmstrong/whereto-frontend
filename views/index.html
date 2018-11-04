@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WhereTo?</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <section class='navbar'>
+      <div id="nav-header">
+        <i class="fas fa-home"></i><h1 id='nav-title'>WhereTo?</h1>
+      </div>
+
+      <div class="nav-links">
+        <div class="nav-link" id="cities-nav-link">
+          <i class="fas fa-city"></i><h3>All Cities</h3>
+        </div>
+        <div class="nav-link" id="favorites-nav-link">
+          <i class="fas fa-check"></i><h3>Favorites</h3>
+        </div>
+        <div class="nav-link" id="rejections-nav-link">
+          <i class="fas fa-times"></i><h3>Rejections</h3>
+        </div>
+      </div>
+
+      <div class="recently-viewed">
+        <h4 id="recently-viewed-header">RECENTLY VIEWED</h4>
+        <div class="recently-viewed-cities">
+          <div class="recently-viewed-city">
+            <p>Denver</p>
+            <h5>Colorado</h5>
+          </div>
+          <div class="recently-viewed-city">
+            <p>Chicago</p>
+            <h5>Illinois</h5>
+          </div>
+          <div class="recently-viewed-city">
+            <p>Los Angeles</p>
+            <h5>California</h5>
+          </div>
+          <div class="recently-viewed-city">
+            <p>Dallas</p>
+            <h5>Texas</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="recently-favorited">
+        <h4 id="recently-favorited-header">RECENTLY FAVORITED</h4>
+        <div class="recently-favorited-cities">
+          <div class="recently-favorited-city">
+            <p>Seattle</p>
+            <h5>Washington</h5>
+          </div>
+          <div class="recently-favorited-city">
+            <p>Portland</p>
+            <h5>Oregon</h5>
+          </div>
+          <div class="recently-favorited-city">
+            <p>Boston</p>
+            <h5>Massachusetts</h5>
+          </div>
+          <div class="recently-favorited-city">
+            <p>Raleigh</p>
+            <h5>North Carolina</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-profile">
+        <img src="../thumbsup.jpeg" alt="thumbsup" id="profile-picture"><h4>Colin Armstrong</h4>
+      </div>
+    </section>
+
+
+    <section class='main'>
+      <div class="data-main">
+        <h2 id="main-section-header">Top 1000 Cities in America by Population</h2>
+        <div class='data-block'>
+          <div class="table-search">
+            <div class="">
+              <h4>Search</h4>
+              <input type="text" name="" value="" placeholder="Enter city name..." class="search-field">
+            </div>
+            <div class="">
+              <h4>Filter by State</h4>
+              <select>
+                <option value="">Alabama</option>
+                <option value="">Alaska</option>
+                <option value="">Arizona</option>
+                <option value="">Arkansas</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="table-container">
+            <table id="city-table">
+              <thead>
+                <tr id="table-header">
+                  <th>Rank</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Growth</th>
+                  <th>Population</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="../lib/index.js"></script>
+  </body>
+</html>

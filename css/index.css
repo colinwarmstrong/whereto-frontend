@@ -1,0 +1,255 @@
+html, body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+tr {
+  outline: none;
+  border: none;
+  height: 2.6em;
+  font-size: 18px;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+tbody {
+  position: relative;
+  overflow: auto;
+}
+
+tr:hover {
+  background-color: rgba(0, 0,0, 0.3);
+  cursor: pointer;
+}
+
+.navbar {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  position: fixed;
+  padding: 24px 24px 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 14em;
+  background-color: rgba(0,0, 0, 0.8);
+  z-index: 2;
+  overflow: auto;
+}
+
+.main {
+  color: white;
+  text-align: center;
+  padding: 32px 32px 32px 24em;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(45, 60, 52), rgb(0, 0, 0));
+  z-index: 1;
+  background-size: cover;
+}
+
+.nav-links {
+  margin-bottom: 16px;
+}
+
+.nav-link {
+  color: rgb(170, 170, 170);
+  display: flex;
+  margin-left: 5px;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.fas {
+  margin: 0px 20px 20px 0px;
+  font-size: 22px;
+}
+
+.fa-home {
+  margin: 0px 10px 3px 0px;
+  font-size: 36px;
+}
+
+.fa-city {
+  margin-right: 19px;
+}
+
+.fa-check {
+  margin-right: 24px;
+}
+
+.fa-times {
+  margin-right: 30px;
+}
+
+.recently-viewed {
+  color: rgb(170, 170, 170);
+  line-height: 20px;
+  letter-spacing: .015em;
+  margin-bottom: 16px;
+}
+
+.recently-favorited {
+  color: rgb(170, 170, 170);
+  line-height: 20px;
+  letter-spacing: .015em;
+  margin-bottom: 16px;
+}
+
+.recently-viewed-cities {
+  height: 25vh;
+  overflow-y: auto;
+}
+
+.recently-favorited-cities {
+  height: 25vh;
+  overflow-y: auto;
+}
+
+.recently-viewed-city {
+  margin-bottom: 18px;
+  font-weight: 350;
+  transition: 0.4s;
+  letter-spacing: .055em;
+  font-size: 17px;
+}
+
+.recently-favorited-city {
+  margin-bottom: 18px;
+  font-weight: 350;
+  transition: 0.4s;
+  letter-spacing: .055em;
+  font-size: 17px;
+}
+
+.recently-viewed-city:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.recently-favorited-city:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-profile {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  padding: 14px 12px 0px 12px;
+  border-top: 1px solid #404040;
+}
+
+.nav-profile:hover {
+  cursor: pointer;
+}
+
+.table-search {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#cities-nav-link {
+  color: rgb(27, 176, 74);
+}
+
+#recently-viewed-header {
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#recently-favorited-header {
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#profile-picture {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.15);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#nav-header:hover {
+  cursor: pointer;
+}
+
+#main-section-header {
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
+#city-table {
+  height: 100%;
+  width: 80%;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+  position: relative;
+  overflow: auto;
+}
+
+#table-container {
+  width: 95%;
+  height: 49em;
+  padding-left: 12em;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: auto;
+}
+
+#table-header:hover {
+  background-color: rgba(0, 0, 0, 0.0);
+  cursor: default;
+}
+
+#favorite-table-icon:hover {
+  color: rgb(27, 176, 74);
+}
+
+#reject-table-icon:hover {
+  color: rgb(176, 39, 27);
+}
