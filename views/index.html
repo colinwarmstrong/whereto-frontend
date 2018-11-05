@@ -43,6 +43,10 @@
             <p>Raleigh</p>
             <h5>North Carolina</h5>
           </div>
+          <div class="recently-favorited-city">
+            <p>Atlanta</p>
+            <h5>Georgia</h5>
+          </div>
         </div>
       </div>
 
@@ -65,6 +69,10 @@
             <p>Dallas</p>
             <h5>Texas</h5>
           </div>
+          <div class="recently-viewed-city">
+            <p>Cleveland</p>
+            <h5>Ohio</h5>
+          </div>
         </div>
       </div>
 
@@ -79,11 +87,11 @@
         <div class='data-block'>
           <div class="table-search">
             <div class="">
-              <h4>Search</h4>
+              <h4 id="search-header">Search</h4>
               <input type="text" name="" value="" placeholder="Enter city name..." class="search-field">
             </div>
             <div class="">
-              <h4>Filter by State</h4>
+              <h4 id="filter-header">Filter by State</h4>
               <select id="state-dropdown">
                 <option class="state-select" value="Alabama">Alabama</option>
                 <option class="state-select" value="Alaska">Alaska</option>
@@ -148,11 +156,11 @@
             <table id="city-table">
               <thead>
                 <tr id="table-header">
-                  <th>Rank</th>
-                  <th>City</th>
-                  <th>State</th>
-                  <th>Growth</th>
-                  <th>Population</th>
+                  <th class="table-header" id="rank-header">Rank</i></th>
+                  <th class="table-header" id="city-header">City <i class="fas fa-sort"></i></th>
+                  <th class="table-header" id="state-header">State <i class="fas fa-sort"></i></th>
+                  <th class="table-header" id="growth-header">Growth <i class="fas fa-sort"></i></th>
+                  <th class="table-header" id="population-header">Population <i class="fas fa-sort"></i></th>
                   <th></th>
                   <th></th>
                 </tr>
