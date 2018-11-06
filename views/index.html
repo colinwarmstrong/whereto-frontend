@@ -9,7 +9,7 @@
   <body>
     <section class='navbar'>
       <div id="nav-header">
-        <i class="fas fa-home"></i><h1 id='nav-title'>WhereTo?</h1>
+        <a href="landing.html"><i class="fas fa-home"></i><h1 id='nav-title'>WhereTo?</h1></a>
       </div>
 
       <div class="nav-links">
@@ -50,26 +50,26 @@
         </div>
       </div>
 
-      <div class="recently-viewed">
-        <h4 id="recently-viewed-header">RECENTLY VIEWED</h4>
-        <div class="recently-viewed-cities">
-          <div class="recently-viewed-city">
+      <div class="recently-rejected">
+        <h4 id="recently-rejected-header">RECENTLY REJECTED</h4>
+        <div class="recently-rejected-cities">
+          <div class="recently-rejected-city">
             <p>Denver</p>
             <h5>Colorado</h5>
           </div>
-          <div class="recently-viewed-city">
+          <div class="recently-rejected-city">
             <p>Chicago</p>
             <h5>Illinois</h5>
           </div>
-          <div class="recently-viewed-city">
+          <div class="recently-rejected-city">
             <p>Los Angeles</p>
             <h5>California</h5>
           </div>
-          <div class="recently-viewed-city">
+          <div class="recently-rejected-city">
             <p>Dallas</p>
             <h5>Texas</h5>
           </div>
-          <div class="recently-viewed-city">
+          <div class="recently-rejected-city">
             <p>Cleveland</p>
             <h5>Ohio</h5>
           </div>
@@ -93,6 +93,7 @@
             <div class="">
               <h4 id="filter-header">Filter by State</h4>
               <select id="state-dropdown">
+                <option class="state-select" value=""></option>
                 <option class="state-select" value="Alabama">Alabama</option>
                 <option class="state-select" value="Alaska">Alaska</option>
                 <option class="state-select" value="Arizona">Arizona</option>
@@ -115,9 +116,9 @@
                 <option class="state-select" value="Maine">Maine</option>
                 <option class="state-select" value="Maryland">Maryland</option>
                 <option class="state-select" value="Massachusetts">Massachusetts</option>
-                <option class="state-select" value="Michigam">Michigan</option>
+                <option class="state-select" value="Michigan">Michigan</option>
                 <option class="state-select" value="Minnesota">Minnesota</option>
-                <option class="state-select" value="MS">Mississippi</option>
+                <option class="state-select" value="Mississippi">Mississippi</option>
                 <option class="state-select" value="Missouri">Missouri</option>
                 <option class="state-select" value="Montana">Montana</option>
                 <option class="state-select" value="Nebraska">Nebraska</option>
@@ -148,7 +149,8 @@
             </div>
 
             <div>
-              <button type="button" name="button" id="clear-button">Clear Filters</button>
+              <h4 id="filter-header">Clear Filters</h4>
+              <button type="button" name="button" class="button">Reset</button>
             </div>
           </div>
 
@@ -156,7 +158,7 @@
             <table id="city-table">
               <thead>
                 <tr id="table-header">
-                  <th class="table-header" id="rank-header">Rank</i></th>
+                  <th id="rank-header">Rank</i></th>
                   <th class="table-header" id="city-header">City <i class="fas fa-sort"></i></th>
                   <th class="table-header" id="state-header">State <i class="fas fa-sort"></i></th>
                   <th class="table-header" id="growth-header">Growth <i class="fas fa-sort"></i></th>
