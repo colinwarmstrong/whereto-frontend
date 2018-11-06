@@ -11,6 +11,13 @@ html, body {
   overflow: hidden;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration :none;
+  display: flex;
+  align-items: center;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0px;
 }
@@ -125,7 +132,7 @@ input {
   margin-right: 30px;
 }
 
-.recently-viewed {
+.recently-rejected {
   color: rgb(170, 170, 170);
   line-height: 20px;
   letter-spacing: .015em;
@@ -143,17 +150,17 @@ input {
   margin-bottom: 3vh;
 }
 
-.recently-viewed-cities {
-  height: 26vh;
+.recently-rejected-cities {
+  height: 22.5vh;
   overflow-y: auto;
 }
 
 .recently-favorited-cities {
-  height: 26vh;
+  height: 22.5vh;
   overflow-y: auto;
 }
 
-.recently-viewed-city {
+.recently-rejected-city {
   margin-bottom: 18px;
   font-weight: 350;
   transition: 0.4s;
@@ -169,7 +176,7 @@ input {
   font-size: 17px;
 }
 
-.recently-viewed-city:hover {
+.recently-rejected-city:hover {
   color: white;
   cursor: pointer;
 }
@@ -230,6 +237,44 @@ input {
   cursor: pointer;
 }
 
+.button {
+  font-size: 14px;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgba(0, 0,0, 0.8);
+  transition-property: background-color;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(27, 176, 74);
+  cursor: pointer;
+}
+
+.landing-main-section-header {
+  font-size: 3.1vh;
+}
+
+.landing-input {
+  font-size: 2.2vh;
+  margin-top: 2.5vh;
+  border-radius: 4px;
+  width: 18vw;
+}
+
+.landing-button {
+  background-color: rgb(27, 176, 74);
+}
+
+.landing-button:hover {
+    background-color: rgb(25, 153, 65);
+}
+
+
 #nav-header {
   border: none;
   display: flex;
@@ -241,7 +286,7 @@ input {
   color: rgb(27, 176, 74);
 }
 
-#recently-viewed-header {
+#recently-rejected-header {
   letter-spacing: 2px;
   font-size: 13px;
   font-weight: 500;
@@ -324,24 +369,6 @@ input {
   background-color: rgb(27, 176, 74);
 }
 
-#clear-button {
-  font-size: 14px;
-  color: white;
-  border: none;
-  width: 150px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: rgba(0, 0,0, 0.8);
-  transition-property: background-color;
-  transition-timing-function: linear;
-  transition-duration: 0.2s;
-}
-
-#clear-button:hover {
-  background-color: rgb(27, 176, 74);
-  cursor: pointer;
-}
-
 #rank-header {
   width: 6vw;
 }
@@ -352,4 +379,73 @@ input {
 
 #filter-header {
   margin-bottom: 8px;
+}
+
+#landing-page {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(45, 60, 52), rgb(0, 0, 0));
+  z-index: 1;
+  background-size: cover;
+}
+
+#landing-header {
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+#landing-logo {
+  font-size: 6vh;
+}
+
+#landing-main {
+  display: flex;
+  height: 76vh;
+}
+
+#landing-main-left {
+  width: 50%;
+  border-right: 1px solid #404040;
+}
+
+#landing-main-right {
+  width: 50%;
+}
+
+#slogan {
+  font-size: 2.3vh;
+  margin-bottom: 5vh;
+  color: rgb(170, 170, 170);
+}
+
+#landing-main-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#landing-main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-button {
+  font-size: 2.25vh;
+  margin-top: 1.8vh;
+  width: 175px;
+  height: 40px;
+}
+
+#register-button {
+  font-size: 2.25vh;
+  margin-top: 1.8vh;
+  width: 175px;
+  height: 40px;
 }
