@@ -31,7 +31,7 @@ tr {
   border: none;
   height: 2.6em;
   max-height: 2.6em;
-  font-size: 18px;
+  font-size: 19px;
   transition-property: background-color;
   transition-timing-function: linear;
   transition-duration: 0.2s;
@@ -349,7 +349,7 @@ input {
 }
 
 #favorite-table-icon:hover {
-  color: rgb(27, 176, 74);
+  color: green;
 }
 
 #reject-table-icon:hover {
