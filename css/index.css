@@ -274,6 +274,13 @@ input {
     background-color: rgb(25, 153, 65);
 }
 
+.rejection {
+  color: red;
+}
+
+#favorite {
+  color: rgb(27, 176, 74);
+}
 
 #nav-header {
   border: none;
